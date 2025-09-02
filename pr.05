@@ -1,0 +1,25 @@
+using System;
+
+class SumOfOddDigits
+{
+    static void Main()
+    {
+        Console.Write("Enter a number: ");
+        int num = int.Parse(Console.ReadLine());
+
+        int sum = 0;
+        int temp = num;
+
+        do
+        {
+            int digit = temp % 10;
+            if (digit % 2 != 0)
+            {
+                sum += digit;
+            }
+            temp /= 10;
+        } while (temp > 0);
+
+        Console.WriteLine($"Sum of odd digits in {num} = {sum}");
+    }
+}
