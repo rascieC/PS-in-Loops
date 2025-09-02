@@ -1,0 +1,22 @@
+using System;
+
+class PowerOfNumber
+{
+    static void Main()
+    {
+        Console.Write("Enter base number: ");
+        int baseNum = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter exponent: ");
+        int exponent = int.Parse(Console.ReadLine());
+
+        int result = 1;
+
+        for (int i = 1; i <= exponent; i++)
+        {
+            result *= baseNum;
+        }
+
+        Console.WriteLine($"Result: {baseNum}^{exponent} = {result}");
+    }
+}
