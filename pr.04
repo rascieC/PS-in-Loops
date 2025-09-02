@@ -1,0 +1,18 @@
+using System;
+
+class SumOfSquares
+{
+    static void Main()
+    {
+        int sum = 0;
+        int i = 1;
+
+        while (i <= 10)
+        {
+            sum += i * i;
+            i++;
+        }
+
+        Console.WriteLine($"Sum of squares of first 10 natural numbers = {sum}");
+    }
+}
